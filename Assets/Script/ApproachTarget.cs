@@ -27,7 +27,7 @@ public class ApproachTarget : MonoBehaviour
 
         //targetPos.x = transform.position.x;
 
-
+        
 
         // 変数 distance を作成してオブジェクトの位置とターゲットオブジェクトの距離を格納
         float distance = Vector3.Distance(transform.position, target.position);
@@ -41,7 +41,7 @@ public class ApproachTarget : MonoBehaviour
         }
         else
         {
-
+            
         }
     }
 }
