@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2135284360}
-  totalTime: 500
+  totalTime: 5
 --- !u!4 &1006803132
 Transform:
   m_ObjectHideFlags: 0
