@@ -15,7 +15,7 @@ public class EnemyGenerator : MonoBehaviour
     void Start()
     {
         //時間間隔を決定する
-        interval = 10f;
+        interval = 10.0f;
     }
 
     // Update is called once per frame
