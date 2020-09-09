@@ -7,17 +7,15 @@ public class Shooting : MonoBehaviour
 
     public GameObject bulletPrefab;
     public float shotSpeed;
-    public int shotCount = 30;
-    private float shotInterval;
+    public int shotCount = 1;
+    int RevivaleFlame = 0;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
 
-            shotInterval += 1;
-
-            if (shotInterval % 5 == 0 && shotCount > 0)
+            if (shotCount > 0)
             {
                 shotCount -= 1;
 
@@ -27,15 +25,24 @@ public class Shooting : MonoBehaviour
 
                 //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
 
-                Destroy(bullet, 1.0f);
+                Destroy(bullet, 3.0f);
             }
+            
 
         }
-        else if (Input.GetKeyDown(KeyCode.R))
+        if (shotCount == 0)
         {
-            shotCount = 1;
 
+
+            RevivaleFlame++;
+            if (RevivaleFlame == 60)
+            {
+                shotCount = 1;
+                RevivaleFlame = 0;
+            }
         }
+        
+
 
     }
 }

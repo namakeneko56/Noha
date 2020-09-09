@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerController : MonoBehaviour
 {
@@ -21,6 +22,13 @@ public class TimerController : MonoBehaviour
         totalTime -= Time.deltaTime;
         seconds = (int)totalTime;
         timerText.text = seconds.ToString();
+
+       if(totalTime<0)
+        {
+            Debug.Log("koko");
+            SceneManager.LoadScene("gameover");
+
+        }
 
     }
 }
