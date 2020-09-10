@@ -997,7 +997,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52f4efc532e8094f8808fa3d78c17ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 89450967}
+  enemyPrefab: {fileID: 2052273269950287169, guid: c6f5d6b1ebe9a7d40812694a862a8ea2,
+    type: 3}
+  enemyPrefab2: {fileID: 670338157}
+  enemyPrefab3: {fileID: 1667573096}
+  minTime: 7
+  maxTime: 7
+  xMinPosition: -10
+  xMaxPosition: 30
+  yMinPosition: 10
+  yMaxPosition: 20
+  zMinPosition: 20
+  zMaxPosition: 20
 --- !u!4 &518072493
 Transform:
   m_ObjectHideFlags: 0
@@ -1006,7 +1017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518072491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -72.8289, y: 12.322266, z: -0.28227806}
+  m_LocalPosition: {x: -0.3, y: 12.322266, z: -101.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 818907889}
