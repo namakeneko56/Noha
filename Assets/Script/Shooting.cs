@@ -48,7 +48,7 @@ public class Shooting : MonoBehaviour
 
 
             RevivaleFlame++;
-            if (RevivaleFlame == 60)
+            if (RevivaleFlame == 30)
             {
                 shotCount = 1;
                 RevivaleFlame = 0;
