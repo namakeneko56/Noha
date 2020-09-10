@@ -26,7 +26,7 @@ public class TimerController : MonoBehaviour
        if(totalTime<0)
         {
             Debug.Log("koko");
-            SceneManager.LoadScene("gameover");
+            SceneManager.LoadScene("gameclear");
 
         }
 
